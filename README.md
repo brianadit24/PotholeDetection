@@ -1,4 +1,4 @@
-# Lung Covid Classification using ResNet34
+# Pothole Detection using YOLOv4
 [![Docker Push](https://github.com/brianadit24/PotholeDetection/workflows/docker-build-push/badge.svg)](https://github.com/brianadit24/PotholeDetection/actions)
 
 ![Index_Result](results/result.jpeg)
