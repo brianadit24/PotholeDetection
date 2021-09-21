@@ -13,7 +13,11 @@ COPY . .
 RUN mkdir uploads
 RUN mkdir model
 
-RUN cd darknet && make
+WORKDIR /darknet
+
+RUN make
+
+WORKDIR /app
 
 RUN gdown --id 1QSdGg7RM0rMrp2zWdjMoAQ9r0Vs71oVL
 RUN mv ./yolov4-custom_best.weights /model
