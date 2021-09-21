@@ -3,7 +3,7 @@ FROM python:3.8-slim-buster
 WORKDIR /app
 
 RUN apt-get update
-RUN apt-get install ffmpeg libsm6 libxext6 libopencv git -y
+RUN apt-get install ffmpeg libsm6 libxext6 libopencv-dev git -y
 RUN pip install gdown
 
 RUN pip install flask
