@@ -13,17 +13,13 @@ cd ..
 rm -rf cfg/
 mkdir cfg
 
-mv ./yolov4-custom.cfg cfg
-
-cd cfg
-sed -i 's/batch=64/batch=1/' yolov4-custom.cfg
-sed -i 's/subdivisions=16/subdivisions=1/' yolov4-custom.cfg
 cd ..
 
-mv ./obj.names data
-mv ./obj.data  data
+mv ./yolov4-custom.cfg darknet/cfg
 
-cd ..
+mv ./obj.names darknet/data
+mv ./obj.data  darknet/data
+
 mkdir uploads
 
 mkdir model
