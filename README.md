@@ -51,26 +51,18 @@ Content-Type: multipart/form-data
 ## Result Example
 
 **Input:**<br>
-![Covid](results/COVID.png)
+![Pothole1](results/test_1.jpg)
 
 **Output:**<br>
-```python
-  {
-    "result": "covid"
-  }
-```
+![Pothole1_Result](results/test_result_1.jpeg)
 
 ---
 
 **Input:**<br>
-![Normal](results/Normal.png)
+![Pothole2](results/test_2.jpg)
 
 **Output:**<br>
-```python
-  {
-    "result": "normal"
-  }
-```
+![Pothole2_Result](results/test_result_2.jpeg)
   
 ## Feedback
 
