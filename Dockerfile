@@ -10,17 +10,8 @@ RUN pip install flask
 
 COPY . .
 
-RUN mkdir uploads
-RUN mkdir model
-
-WORKDIR /darknet
-
-RUN make
-
-WORKDIR /app
-
-RUN gdown --id 1QSdGg7RM0rMrp2zWdjMoAQ9r0Vs71oVL
-RUN mv ./yolov4-custom_best.weights /model
+RUN chmod +x init_app.sh
+RUN ./init_app.sh
 
 EXPOSE 8080
 
